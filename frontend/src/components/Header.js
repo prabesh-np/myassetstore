@@ -1,18 +1,17 @@
 import React from "react";
-import "boxicons";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 const Header = () => {
     return (
         <header>
-            <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+            <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect py-5>
                 <Container>
-                    <Navbar.Brand href='/'>myassetstore</Navbar.Brand>
+                    <Navbar.Brand href='/'>MYASSETSTORE</Navbar.Brand>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' />
                     <Navbar.Collapse id='basic-navbar-nav'>
                         <Nav className='ms-auto'>
-                            <Nav.Link href='/cart'>cart</Nav.Link>
-                            <Nav.Link href='/login'>sign in</Nav.Link>
+                            <Nav.Link href='/cart'>CART</Nav.Link>
+                            <Nav.Link href='/login'>SIGN IN</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
