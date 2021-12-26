@@ -14,7 +14,7 @@ const ProductScreen = () => {
          setProduct(data);
       };
       fetchProduct();
-   }, []);
+   }, [id]);
 
    // const product = products.find((product) => product._id === id);
    return (
