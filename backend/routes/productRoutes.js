@@ -5,7 +5,7 @@ import Product from "../models/productModel.js";
 const router = express.Router();
 
 // @desc Fetch all Products
-// @route  GET /api/products
+// @route  GET /api/produ cts
 // @access Public
 
 router.get(
@@ -27,7 +27,8 @@ router.get(
       if (product) {
          res.json(product);
       } else {
-         res.status(404).json({ message: "Product not found!" });
+         res.status(404);
+         throw new Error("Product Not Found!");
       }
 
       res.json(product);
